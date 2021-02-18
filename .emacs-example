@@ -1,0 +1,18 @@
+;; configure before, e.g.
+(load-theme 'tango-dark)
+
+;; configure for docker
+
+(let ((*configure-emacs-for-docker-and-docker-compose-directory* "PATH-TO-DIRECTORY-OF-REPOSITORY-FROM-GITHUB"))
+  (add-to-list 'load-path *configure-emacs-for-docker-and-docker-compose-directory*)
+  (let ((configure-emacs-for-docker-and-docker-compose-file (concat *configure-emacs-for-docker-and-docker-compose-directory* "configure-emacs-for-docker-and-docker-compose.el")))
+    (load *configure-emacs-for-docker-and-docker-compose-file*)))
+
+;; configure after, e.g. 
+;;   [I took this from https://www.emacswiki.org/emacs/AlarmBell#h5o-3]
+(setq visible-bell nil
+      ring-bell-function 'flash-mode-line)
+
+(defun flash-mode-line ()
+  (invert-face 'mode-line)
+  (run-with-timer 0.1 nil #'invert-face 'mode-line))
