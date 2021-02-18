@@ -2,7 +2,7 @@
  - `git clone https://github.com/zipperer/dot-emacs-for-dockerfile-and-docker-compose.git`, or
  - download this repository
 2. `$ ./use-curl-to-get-files-that-configure-emacs-for-dockerfile-and-docker-compose.sh`
-3. In this repository, see .emacs-example. In particular, see the section 
+3. In this repository, see `.emacs-example`. In particular, see the section 
   ```
   (let ((*configure-emacs-for-docker-and-docker-compose-directory* "PATH-TO-DIRECTORY-OF-REPOSITORY-FROM-GITHUB"))
     (add-to-list 'load-path *configure-emacs-for-docker-and-docker-compose-directory*)
