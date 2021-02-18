@@ -3,10 +3,10 @@
 
 ;; configure for docker
 
-(let ((*configure-emacs-for-docker-and-docker-compose-directory* "PATH-TO-DIRECTORY-OF-REPOSITORY-FROM-GITHUB"))
-  (add-to-list 'load-path *configure-emacs-for-docker-and-docker-compose-directory*)
-  (let ((configure-emacs-for-docker-and-docker-compose-file (concat *configure-emacs-for-docker-and-docker-compose-directory* "configure-emacs-for-docker-and-docker-compose.el")))
-    (load *configure-emacs-for-docker-and-docker-compose-file*)))
+(let ((configure-emacs-for-docker-and-docker-compose-directory "PATH-TO-DIRECTORY-OF-REPOSITORY-FROM-GITHUB"))
+  (add-to-list 'load-path configure-emacs-for-docker-and-docker-compose-directory)
+  (let ((configure-emacs-for-docker-and-docker-compose-file (concat configure-emacs-for-docker-and-docker-compose-directory "configure-emacs-for-docker-and-docker-compose.el")))
+    (load configure-emacs-for-docker-and-docker-compose-file)))
 
 ;; configure after, e.g. 
 ;;   [I took this from https://www.emacswiki.org/emacs/AlarmBell#h5o-3]
