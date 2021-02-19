@@ -9,7 +9,7 @@
     (let ((configure-emacs-for-docker-and-docker-compose-file (concat *configure-emacs-for-docker-and-docker-compose-directory* "configure-emacs-for-docker-and-docker-compose.el")))
       (load *configure-emacs-for-docker-and-docker-compose-file*)))
   ```
-   In your `~/.emacs`, add a section like that. Replace `PATH-TO-DIRECTORY-OF-REPOSITORY-FROM-GITHUB` with the path to where made the repository. e.g. `/home/your-user/example-directory/dot-emacs-for-dockerfile-and-docker-compose/`. So, that line would be
+   Copy that section. In your `~/.emacs`, paste that section. Replace `PATH-TO-DIRECTORY-OF-REPOSITORY-FROM-GITHUB` with the path to where made the repository. e.g. `/home/your-user/example-directory/dot-emacs-for-dockerfile-and-docker-compose/`. So, that line would be
    ```
   (let ((*configure-emacs-for-docker-and-docker-compose-directory* "/home/your-user/example-directory/dot-emacs-for-dockerfile-and-docker-compose/"))
   ```
