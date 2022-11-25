@@ -1,3 +1,4 @@
+# To use these files, follow these steps:
 1. Either
  - `git clone https://github.com/zipperer/dot-emacs-for-dockerfile-and-docker-compose.git`, or
  - download this repository
